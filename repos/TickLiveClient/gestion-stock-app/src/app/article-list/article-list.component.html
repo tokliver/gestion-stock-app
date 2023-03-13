@@ -1,0 +1,69 @@
+
+<div class="recherche" [formGroup]="searchForm" >
+  <h1> recherche</h1>
+  <div class="row">
+    <div class="col-6">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Reference</span>
+        <input type="number" class="form-control" formControlName="id" placeholder="reference" aria-label="id" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Nom</span>
+        <input type="text" class="form-control" formControlName="nom" placeholder="nom" aria-label="nom" aria-describedby="basic-addon1">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Prix Unitaire min</span>
+        <input type="number" class="form-control" formControlName="prixVenteUnitaireMin" placeholder="prix unitaire min" aria-label="prixUnitaireMin" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Prix unitaire max</span>
+        <input type="number" class="form-control" formControlName="prixVenteUnitaireMax" placeholder="prix unitaire max" aria-label="prixUnitaireMax" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+          <button type="submit" (click)="onSearchArticles()" class="btn btn-primary form-control">Rechercher </button>
+        </div>
+    </div>
+    
+  </div>
+</div>
+<table class="table  table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Reference</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Type Article</th>
+        <th scope="col">PV Unitaire</th>
+        <th scope="col">PV HT</th>
+        <th scope="col">PV TTC</th>
+        <th scope="col">Quantite</th>
+        <th scope="col">Taux TVA</th>
+        <th scope="col">Destinée à la Vente</th>
+        <th>Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let article of articles">
+        <th scope="row">{{article.id}}</th>
+        <td>{{article.nom}}</td>
+        <td>{{article.articleType}}</td>
+        <td>{{article.prixVenteUnitaire}}</td>
+        <td>{{article.prixVenteHT}}</td>
+        <td>{{article.prixVenteTTC}}</td>
+        <td>{{article.quantiteStock}}</td>
+        <td>{{article.tauxTVA}}</td>
+        <td>{{article.isVenteEmporter}}</td>
+        <td><button class="btn btn-info " routerLink="edit/article/{{article.id}}">Edit</button> | <button class="btn btn-danger" (click)="deleteArticle(article.id)">Delete</button></td>
+      </tr>
+    </tbody>
+</table>

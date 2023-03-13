@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickLive.Api", "TickLive.Api\TickLive.Api.csproj", "{33C13387-6390-4979-A9F4-CC97E44CB16B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickLive.Core", "TickLive.Core\TickLive.Core.csproj", "{E1F68186-1995-4862-98A4-BAA66061E8F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickLive.Infrastructure", "TickLive.Infrastructure\TickLive.Infrastructure.csproj", "{4BFFA0CA-8651-428C-BE32-AD687C4EBD2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8F3C5D90-FC53-49F4-8E8F-E0A733A44A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickLive.UnitTest", "TickLive.UnitTest\TickLive.UnitTest.csproj", "{77FB6ADB-F34E-45FB-923E-F5250C39097F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickLive.IntegrationTest", "TickLive.IntegrationTest\TickLive.IntegrationTest.csproj", "{063BFBC4-912F-47C5-9514-E0CB65F7F1DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33C13387-6390-4979-A9F4-CC97E44CB16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C13387-6390-4979-A9F4-CC97E44CB16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C13387-6390-4979-A9F4-CC97E44CB16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C13387-6390-4979-A9F4-CC97E44CB16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F68186-1995-4862-98A4-BAA66061E8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F68186-1995-4862-98A4-BAA66061E8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F68186-1995-4862-98A4-BAA66061E8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F68186-1995-4862-98A4-BAA66061E8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFFA0CA-8651-428C-BE32-AD687C4EBD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFFA0CA-8651-428C-BE32-AD687C4EBD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFFA0CA-8651-428C-BE32-AD687C4EBD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFFA0CA-8651-428C-BE32-AD687C4EBD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FB6ADB-F34E-45FB-923E-F5250C39097F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FB6ADB-F34E-45FB-923E-F5250C39097F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FB6ADB-F34E-45FB-923E-F5250C39097F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FB6ADB-F34E-45FB-923E-F5250C39097F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063BFBC4-912F-47C5-9514-E0CB65F7F1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063BFBC4-912F-47C5-9514-E0CB65F7F1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063BFBC4-912F-47C5-9514-E0CB65F7F1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063BFBC4-912F-47C5-9514-E0CB65F7F1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77FB6ADB-F34E-45FB-923E-F5250C39097F} = {8F3C5D90-FC53-49F4-8E8F-E0A733A44A05}
+		{063BFBC4-912F-47C5-9514-E0CB65F7F1DD} = {8F3C5D90-FC53-49F4-8E8F-E0A733A44A05}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {111B8FC2-938E-43E2-BFD7-4EDB8110B922}
+	EndGlobalSection
+EndGlobal
