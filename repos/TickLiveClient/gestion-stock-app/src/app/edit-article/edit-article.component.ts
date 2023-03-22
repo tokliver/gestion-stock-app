@@ -77,7 +77,6 @@ export class EditArticleComponent implements OnInit {
   onValueChange() {
    let  isVenteEmporter= this.articleForm.get('isVenteEmporter')?.value ;
    let  prixVenteHT = this.articleForm.get('prixVenteUnitaire')?.value * this.articleForm.get('quantiteStock')?.value ;
-   console.log('calcul prixVenteHT',prixVenteHT)
    this.articleForm.controls['prixVenteHT'].setValue(prixVenteHT);
     let tva = isVenteEmporter ? this.TVA_VENTE_EMPORTER  : this.TVA ;
     this.articleForm.controls['prixVenteTTC'].setValue(prixVenteHT + tva*prixVenteHT);
